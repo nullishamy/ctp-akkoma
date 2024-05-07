@@ -1,0 +1,357 @@
+---
+whiskers:
+  version: 2.0.0
+  matrix:
+    - flavor
+    - accent
+  filename: "themes/{{ flavor.identifier }}/{{ accent }}.json"
+---
+{% set palette = flavor.colors %}
+{
+  "_pleroma_theme_version": 2,
+  "theme": {
+    "themeEngineVersion": 3,
+    "shadows": {
+      "panel": [
+        {
+          "x": 1,
+          "y": 1,
+          "blur": 4,
+          "spread": 0,
+          "color": "#{{ palette.base.hex }}",
+          "alpha": 0.6
+        }
+      ],
+      "topBar": [
+        {
+          "x": 0,
+          "y": 0,
+          "blur": 4,
+          "spread": 0,
+          "color": "#{{ palette.base.hex }}",
+          "alpha": 0.6
+        }
+      ],
+      "popup": [
+        {
+          "x": 2,
+          "y": 2,
+          "blur": 3,
+          "spread": 0,
+          "color": "#{{ palette.base.hex }}",
+          "alpha": 0.5
+        }
+      ],
+      "avatar": [
+        {
+          "x": 0,
+          "y": 1,
+          "blur": 8,
+          "spread": 0,
+          "color": "#{{ palette.base.hex }}",
+          "alpha": 0.7
+        }
+      ],
+      "avatarStatus": [],
+      "panelHeader": [],
+      "button": [
+        {
+          "x": 0,
+          "y": 0,
+          "blur": 2,
+          "spread": 0,
+          "color": "#{{ palette.base.hex }}",
+          "alpha": 1
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "blur": 0,
+          "spread": 0,
+          "color": "#{{ palette.base.hex }}",
+          "alpha": 0.2,
+          "inset": true
+        },
+        {
+          "x": 0,
+          "y": -1,
+          "blur": 0,
+          "spread": 0,
+          "color": "#{{ palette.base.hex }}",
+          "alpha": 0.2,
+          "inset": true
+        }
+      ],
+      "buttonHover": [
+        {
+          "x": 0,
+          "y": 0,
+          "blur": 4,
+          "spread": 0,
+          "color": "#{{ palette.base.hex }}",
+          "alpha": 1
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "blur": 0,
+          "spread": 0,
+          "color": "#{{ palette.base.hex }}",
+          "alpha": 0.2,
+          "inset": true
+        },
+        {
+          "x": 0,
+          "y": -1,
+          "blur": 0,
+          "spread": 0,
+          "color": "#{{ palette.base.hex }}",
+          "alpha": 0.2,
+          "inset": true
+        }
+      ],
+      "buttonPressed": [
+        {
+          "x": 0,
+          "y": 0,
+          "blur": 4,
+          "spread": 0,
+          "color": "#{{ palette.base.hex }}",
+          "alpha": 1
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "blur": 0,
+          "spread": 0,
+          "color": "#{{ palette.base.hex }}",
+          "alpha": 0.2,
+          "inset": true
+        },
+        {
+          "x": 0,
+          "y": -1,
+          "blur": 0,
+          "spread": 0,
+          "color": "#{{ palette.base.hex }}",
+          "alpha": 0.2,
+          "inset": true
+        }
+      ],
+      "input": [
+        {
+          "x": 0,
+          "y": 1,
+          "blur": 0,
+          "spread": 0,
+          "color": "#{{ palette.base.hex }}",
+          "alpha": 0.2,
+          "inset": true
+        },
+        {
+          "x": 0,
+          "y": -1,
+          "blur": 0,
+          "spread": 0,
+          "color": "#{{ palette.base.hex }}",
+          "alpha": 0.2,
+          "inset": true
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "blur": 2,
+          "inset": true,
+          "spread": 0,
+          "color": "#{{ palette.base.hex }}",
+          "alpha": 1
+        }
+      ]
+    },
+    "colors": {
+      "underlay": "#{{ palette.crust.hex }}",
+      "bg": "#{{ palette.mantle.hex }}",
+      "fg": "#{{ palette.base.hex }}",
+      "cRed": "#{{ palette.red.hex }}",
+      "cGreen": "#{{ palette.green.hex }}",
+      "cOrange": "#{{ palette.peach.hex }}",
+      "cBlue": "#{{ palette.lavender.hex }}",
+      "accent": "#{{ palette[accent].hex }}",
+      "link": "#{{ palette[accent].hex }}",
+      "text": "#{{ palette.text.hex }}",
+      "badgeNotification": "#{{ palette.red.hex }}",
+      "badgeNotificationText": "#{{ palette.base.hex }}",
+      "alertNeutral": "#{{ palette.overlay0.hex }}",
+      "alertNeutralText": "#{{ palette.text.hex }}",
+      "alertPopupNeutral": "#{{ palette.overlay0.hex }}",
+      "alertPopupNeutralText": "#{{ palette.text.hex }}",
+      "alertSuccess": "#{{ palette.green.hex }}",
+      "alertSuccessText": "#{{ palette.base.hex }}",
+      "alertPopupSuccess": "#{{ palette.green.hex }}",
+      "alertPopupSuccessText": "#{{ palette.text.hex }}",
+      "alertWarning": "#{{ palette.peach.hex }}",
+      "alertWarningText": "#{{ palette.base.hex }}",
+      "alertPopupWarning": "#{{ palette.peach.hex }}",
+      "alertPopupWarningText": "#{{ palette.base.hex }}",
+      "alertError": "#{{ palette.red.hex }}",
+      "alertErrorText": "#{{ palette.base.hex }}",
+      "alertPopupError": "#{{ palette.red.hex }}",
+      "alertPopupErrorText": "#{{ palette.base.hex }}",
+      "panel": "#{{ palette.base.hex }}",
+      "panelText": "#{{ palette.text.hex }}",
+      "alertNeutralPanelText": "#{{ palette.text.hex }}",
+      "alertSuccessPanelText": "#{{ palette.text.hex }}",
+      "alertWarningPanelText": "#{{ palette.text.hex }}",
+      "alertErrorPanelText": "#{{ palette.text.hex }}",
+      "fgText": "#{{ palette.text.hex }}",
+      "topBar": "#{{ palette.base.hex }}",
+      "topBarText": "#{{ palette.text.hex }}",
+      "input": "#{{ palette.base.hex }}",
+      "inputTopbarText": "#{{ palette.text.hex }}",
+      "inputPanelText": "#{{ palette.text.hex }}",
+      "inputText": "#{{ palette.text.hex }}",
+      "btn": "#{{ palette.base.hex }}",
+      "btnText": "#{{ palette.text.hex }}",
+      "btnTopBarText": "#{{ palette.text.hex }}",
+      "btnDisabled": "#{{ palette.crust.hex }}",
+      "btnDisabledTopBarText": "#{{ palette.text.hex }}",
+      "btnPanelText": "#{{ palette.text.hex }}",
+      "btnDisabledPanelText": "#{{ palette.text.hex }}",
+      "btnDisabledText": "#{{ palette.text.hex }}",
+      "btnToggled": "#{{ palette.surface0.hex }}",
+      "btnToggledTopBarText": "#{{ palette.text.hex }}",
+      "btnToggledPanelText": "#{{ palette.text.hex }}",
+      "btnToggledText": "#{{ palette.text.hex }}",
+      "btnPressed": "#{{ palette.base.hex }}",
+      "btnPressedTopBarText": "#{{ palette.text.hex }}",
+      "btnPressedTopBar": "#{{ palette.base.hex }}",
+      "btnPressedPanelText": "#{{ palette.text.hex }}",
+      "btnPressedPanel": "#{{ palette.base.hex }}",
+      "btnPressedText": "#{{ palette.text.hex }}",
+      "tabActiveText": "#{{ palette.text.hex }}",
+      "tabText": "#{{ palette.text.hex }}",
+      "tab": "#{{ palette.base.hex }}",
+      "fgLink": "#{{ palette[accent].hex }}",
+      "topBarLink": "#{{ palette.text.hex }}",
+      "panelLink": "#{{ palette[accent].hex }}",
+      "panelFaint": "#{{ palette.text.hex }}",
+      "icon": "#{{ palette[accent].hex }}",
+      "poll": "#{{ palette[accent].hex }}",
+      "pollText": "#{{ palette.text.hex }}",
+      "border": "#{{ palette.crust.hex }}",
+      "postCyantext": "#{{ palette.lavender.hex }}",
+      "postGreentext": "#{{ palette.green.hex }}",
+      "postLink": "#{{ palette[accent].hex }}",
+      "lightText": "#{{ palette.text.hex }}",
+      "popover": "#{{ palette.mantle.hex }}",
+      "selectedMenuPopover": "#{{ palette.base.hex }}",
+      "highlight": "#{{ palette.surface0.hex }}",
+      "highlightText": "#{{ palette.text.hex }}",
+      "selectedMenu": "#{{ palette.surface0.hex }}",
+      "selectedMenuText": "#{{ palette[accent].hex }}",
+      "selectedMenuPopoverIcon": "#{{ palette[accent].hex }}",
+      "highlightLink": "#{{ palette[accent].hex }}",
+      "selectedMenuLink": "#{{ palette[accent].hex }}",
+      "selectedMenuPopoverLink": "#{{ palette[accent].hex }}",
+      "selectedMenuPopoverText": "#{{ palette[accent].hex }}",
+      "faintLink": "#{{ palette.lavender.hex }}",
+      "highlightFaintLink": "#{{ palette.lavender.hex }}",
+      "selectedMenuFaintLink": "#{{ palette.lavender.hex }}",
+      "selectedMenuPopoverFaintLink": "#{{ palette.lavender.hex }}",
+      "faint": "#{{ palette.subtext0.hex }}",
+      "highlightFaintText": "#{{ palette.subtext0.hex }}",
+      "selectedMenuFaintText": "#{{ palette.subtext0.hex }}",
+      "selectedMenuPopoverFaintText": "#{{ palette.subtext0.hex }}",
+      "highlightLightText": "#{{ palette.text.hex }}",
+      "selectedMenuLightText": "#{{ palette.text.hex }}",
+      "selectedMenuPopoverLightText": "#{{ palette.text.hex }}",
+      "selectedMenuIcon": "#{{ palette[accent].hex }}",
+      "selectedPost": "#{{ palette.surface0.hex }}",
+      "selectedPostText": "#{{ palette.text.hex }}",
+      "selectedPostIcon": "#{{ palette[accent].hex }}",
+      "selectedPostLink": "#{{ palette[accent].hex }}",
+      "selectedPostFaintLink": "#{{ palette.lavender.hex }}",
+      "highlightPostLink": "#{{ palette[accent].hex }}",
+      "selectedPostPostLink": "#{{ palette[accent].hex }}",
+      "selectedPostLightText": "#{{ palette.text.hex }}",
+      "selectedPostFaintText": "#{{ palette.subtext0.hex }}",
+      "popoverText": "#{{ palette.text.hex }}",
+      "popoverIcon": "#{{ palette[accent].hex }}",
+      "popoverLink": "#{{ palette[accent].hex }}",
+      "postFaintLink": "#{{ palette[accent].hex }}",
+      "popoverPostFaintLink": "#{{ palette[accent].hex }}",
+      "popoverFaintLink": "#{{ palette.lavender.hex }}",
+      "popoverFaintText": "#{{ palette.subtext0.hex }}",
+      "popoverPostLink": "#{{ palette[accent].hex }}",
+      "popoverLightText": "#{{ palette.text.hex }}",
+      "highlightIcon": "#{{ palette[accent].hex }}",
+      "highlightPostFaintLink": "#{{ palette[accent].hex }}",
+      "profileTint": "#{{ palette.mantle.hex }}",
+      "profileBg": "#{{ palette.crust.hex }}",
+      "wallpaper": "#{{ palette.base.hex }}"
+    },
+    "opacity": {
+      "underlay": 0.15,
+      "bg": 1,
+      "alert": 0.5,
+      "alertPopup": 0.95,
+      "panel": 1,
+      "input": 0.5,
+      "btn": 1,
+      "faint": 0.5,
+      "border": 1,
+      "popover": 1,
+      "profileTint": 0.5
+    },
+    "radii": {
+      "btn": 4,
+      "input": 4,
+      "checkbox": 2,
+      "panel": 10,
+      "avatar": 5,
+      "avatarAlt": 50,
+      "tooltip": 2,
+      "attachment": 5
+    },
+    "fonts": {
+      "interface": {
+        "family": "sans-serif"
+      },
+      "input": {
+        "family": "inherit"
+      },
+      "post": {
+        "family": "inherit"
+      },
+      "postCode": {
+        "family": "monospace"
+      }
+    }
+  },
+  "source": {
+    "themeEngineVersion": 3,
+    "fonts": {},
+    "shadows": {},
+    "opacity": {},
+    "colors": {
+      "bg": "#{{ palette.mantle.hex }}",
+      "fg": "#{{ palette.base.hex }}",
+      "text": "#{{ palette.text.hex }}",
+      "underlay": "#{{ palette.crust.hex }}",
+      "link": "#{{ palette[accent].hex }}",
+      "accent": "#{{ palette[accent].hex }}",
+      "faint": "#{{ palette.subtext0.hex }}",
+      "faintLink": "#{{ palette[accent].hex }}",
+      "cBlue": "#{{ palette.blue.hex }}",
+      "cRed": "#{{ palette.red.hex }}",
+      "cGreen": "#{{ palette.green.hex }}",
+      "cOrange": "#{{ palette.peach.hex }}",
+      "highlight": "#{{ palette.surface0.hex }}",
+      "selectedMenu": "#{{ palette.surface0.hex }}",
+      "selectedMenuText": "#{{ palette[accent].hex }}",
+      "border": "#{{ palette.crust.hex }}",
+      "topBarLink": "#{{ palette.text.hex }}"
+    },
+    "radii": {}
+  }
+}
