@@ -4,161 +4,16 @@
   "theme": {
     "themeEngineVersion": 3,
     "shadows": {
-      "panel": [
-        {
-          "x": 1,
-          "y": 1,
-          "blur": 4,
-          "spread": 0,
-          "color": "#24273a",
-          "alpha": 0.6
-        }
-      ],
-      "topBar": [
-        {
-          "x": 0,
-          "y": 0,
-          "blur": 4,
-          "spread": 0,
-          "color": "#24273a",
-          "alpha": 0.6
-        }
-      ],
-      "popup": [
-        {
-          "x": 2,
-          "y": 2,
-          "blur": 3,
-          "spread": 0,
-          "color": "#24273a",
-          "alpha": 0.5
-        }
-      ],
-      "avatar": [
-        {
-          "x": 0,
-          "y": 1,
-          "blur": 8,
-          "spread": 0,
-          "color": "#24273a",
-          "alpha": 0.7
-        }
-      ],
+      "panel": [],
+      "topBar": [],
+      "popup": [],
+      "avatar": [],
       "avatarStatus": [],
       "panelHeader": [],
-      "button": [
-        {
-          "x": 0,
-          "y": 0,
-          "blur": 2,
-          "spread": 0,
-          "color": "#24273a",
-          "alpha": 1
-        },
-        {
-          "x": 0,
-          "y": 1,
-          "blur": 0,
-          "spread": 0,
-          "color": "#24273a",
-          "alpha": 0.2,
-          "inset": true
-        },
-        {
-          "x": 0,
-          "y": -1,
-          "blur": 0,
-          "spread": 0,
-          "color": "#24273a",
-          "alpha": 0.2,
-          "inset": true
-        }
-      ],
-      "buttonHover": [
-        {
-          "x": 0,
-          "y": 0,
-          "blur": 4,
-          "spread": 0,
-          "color": "#24273a",
-          "alpha": 1
-        },
-        {
-          "x": 0,
-          "y": 1,
-          "blur": 0,
-          "spread": 0,
-          "color": "#24273a",
-          "alpha": 0.2,
-          "inset": true
-        },
-        {
-          "x": 0,
-          "y": -1,
-          "blur": 0,
-          "spread": 0,
-          "color": "#24273a",
-          "alpha": 0.2,
-          "inset": true
-        }
-      ],
-      "buttonPressed": [
-        {
-          "x": 0,
-          "y": 0,
-          "blur": 4,
-          "spread": 0,
-          "color": "#24273a",
-          "alpha": 1
-        },
-        {
-          "x": 0,
-          "y": 1,
-          "blur": 0,
-          "spread": 0,
-          "color": "#24273a",
-          "alpha": 0.2,
-          "inset": true
-        },
-        {
-          "x": 0,
-          "y": -1,
-          "blur": 0,
-          "spread": 0,
-          "color": "#24273a",
-          "alpha": 0.2,
-          "inset": true
-        }
-      ],
-      "input": [
-        {
-          "x": 0,
-          "y": 1,
-          "blur": 0,
-          "spread": 0,
-          "color": "#24273a",
-          "alpha": 0.2,
-          "inset": true
-        },
-        {
-          "x": 0,
-          "y": -1,
-          "blur": 0,
-          "spread": 0,
-          "color": "#24273a",
-          "alpha": 0.2,
-          "inset": true
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "blur": 2,
-          "inset": true,
-          "spread": 0,
-          "color": "#24273a",
-          "alpha": 1
-        }
-      ]
+      "button": [],
+      "buttonHover": [],
+      "buttonPressed": [],
+      "input": []
     },
     "colors": {
       "underlay": "#181926",
@@ -278,9 +133,9 @@
       "popoverLightText": "#cad3f5",
       "highlightIcon": "#f4dbd6",
       "highlightPostFaintLink": "#f4dbd6",
-      "profileTint": "#1e2030",
-      "profileBg": "#181926",
-      "wallpaper": "#24273a"
+      "profileTint": "#000000",
+      "profileBg": "#000000",
+      "wallpaper": "#000000"
     },
     "opacity": {
       "underlay": 0.15,
@@ -293,7 +148,7 @@
       "faint": 0.5,
       "border": 1,
       "popover": 1,
-      "profileTint": 0.5
+      "profileTint": 1
     },
     "radii": {
       "btn": 4,
@@ -326,14 +181,14 @@
     "shadows": {},
     "opacity": {},
     "colors": {
-      "bg": "#1e2030",
-      "fg": "#24273a",
+      "bg": "#24273a",
+      "fg": "#181926",
       "text": "#cad3f5",
       "underlay": "#181926",
-      "link": "#f4dbd6",
+      "link": "#7dc4e4",
       "accent": "#f4dbd6",
       "faint": "#a5adcb",
-      "faintLink": "#f4dbd6",
+      "faintLink": "#7dc4e4",
       "cBlue": "#8aadf4",
       "cRed": "#ed8796",
       "cGreen": "#a6da95",
